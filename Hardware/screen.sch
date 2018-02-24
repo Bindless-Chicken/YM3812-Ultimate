@@ -1,0 +1,261 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Yamaha
+LIBS:Microchip_2
+LIBS:OPL
+LIBS:opl2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SSD1306 D?
+U 1 1 5A8019C5
+P 5300 4500
+F 0 "D?" H 5350 7150 60  0000 C CNN
+F 1 "SSD1306" H 6350 6900 60  0000 C CNN
+F 2 "" H 5300 4500 60  0001 C CNN
+F 3 "" H 5300 4500 60  0001 C CNN
+	1    5300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A801B00
+P 4100 4500
+F 0 "#PWR?" H 4100 4250 50  0001 C CNN
+F 1 "GND" H 4100 4350 50  0000 C CNN
+F 2 "" H 4100 4500 50  0001 C CNN
+F 3 "" H 4100 4500 50  0001 C CNN
+	1    4100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5A801B53
+P 3900 3500
+F 0 "#PWR?" H 3900 3350 50  0001 C CNN
+F 1 "+3.3V" H 3900 3640 50  0000 C CNN
+F 2 "" H 3900 3500 50  0001 C CNN
+F 3 "" H 3900 3500 50  0001 C CNN
+	1    3900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A801B98
+P 4400 4300
+F 0 "C?" H 4425 4400 50  0000 L CNN
+F 1 "2.2uF" H 4425 4200 50  0000 L CNN
+F 2 "" H 4438 4150 50  0001 C CNN
+F 3 "" H 4400 4300 50  0001 C CNN
+	1    4400 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A801CA4
+P 4750 4500
+F 0 "C?" H 4775 4600 50  0000 L CNN
+F 1 "2.2uF" H 4775 4400 50  0000 L CNN
+F 2 "" H 4788 4350 50  0001 C CNN
+F 3 "" H 4750 4500 50  0001 C CNN
+	1    4750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A801F3E
+P 7050 5500
+F 0 "#PWR?" H 7050 5250 50  0001 C CNN
+F 1 "GND" H 7050 5350 50  0000 C CNN
+F 2 "" H 7050 5500 50  0001 C CNN
+F 3 "" H 7050 5500 50  0001 C CNN
+	1    7050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 5A801FB6
+P 5750 5250
+F 0 "#PWR?" H 5750 5100 50  0001 C CNN
+F 1 "+3.3V" H 5750 5390 50  0000 C CNN
+F 2 "" H 5750 5250 50  0001 C CNN
+F 3 "" H 5750 5250 50  0001 C CNN
+	1    5750 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A80248E
+P 6700 4950
+F 0 "C?" H 6725 5050 50  0000 L CNN
+F 1 "10uF" H 6725 4850 50  0000 L CNN
+F 2 "" H 6738 4800 50  0001 C CNN
+F 3 "" H 6700 4950 50  0001 C CNN
+	1    6700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A8027F1
+P 6450 4950
+F 0 "C?" H 6475 5050 50  0000 L CNN
+F 1 "10uF" H 6475 4850 50  0000 L CNN
+F 2 "" H 6488 4800 50  0001 C CNN
+F 3 "" H 6450 4950 50  0001 C CNN
+	1    6450 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A802D5E
+P 6200 4950
+F 0 "R?" V 6280 4950 50  0000 C CNN
+F 1 "330k" V 6200 4950 50  0000 C CNN
+F 2 "" V 6130 4950 50  0001 C CNN
+F 3 "" H 6200 4950 50  0001 C CNN
+	1    6200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3850 4100 3850
+Wire Wire Line
+	4100 3000 4100 4500
+Wire Wire Line
+	5100 3650 4100 3650
+Connection ~ 4100 3850
+Wire Wire Line
+	3900 3500 3900 3750
+Wire Wire Line
+	3900 3750 5100 3750
+Wire Wire Line
+	5100 4300 4750 4300
+Wire Wire Line
+	4750 4700 5000 4700
+Wire Wire Line
+	5000 4700 5000 4400
+Wire Wire Line
+	5000 4400 5100 4400
+Wire Wire Line
+	4750 4700 4750 4650
+Wire Wire Line
+	4750 4300 4750 4350
+Wire Wire Line
+	4400 4100 5100 4100
+Wire Wire Line
+	4400 4100 4400 4150
+Wire Wire Line
+	4400 4450 4400 4500
+Wire Wire Line
+	4400 4500 4600 4500
+Wire Wire Line
+	4600 4500 4600 4200
+Wire Wire Line
+	4600 4200 5100 4200
+Wire Wire Line
+	6950 5300 6950 4700
+Wire Wire Line
+	6200 5300 7050 5300
+Wire Wire Line
+	7050 4700 7050 5500
+Connection ~ 7050 5300
+Wire Wire Line
+	5750 5250 5750 5300
+Wire Wire Line
+	5750 5300 5950 5300
+Wire Wire Line
+	5950 5300 5950 4700
+Wire Wire Line
+	5950 4950 5850 4950
+Connection ~ 5950 4950
+Wire Wire Line
+	5850 4950 5850 4700
+Wire Wire Line
+	6700 5100 6700 5300
+Connection ~ 6950 5300
+Wire Wire Line
+	6700 4800 6700 4700
+Wire Wire Line
+	6450 5100 6450 5300
+Connection ~ 6700 5300
+Wire Wire Line
+	6450 4800 6450 4700
+Wire Wire Line
+	6200 5100 6200 5300
+Connection ~ 6450 5300
+Wire Wire Line
+	6200 4800 6200 4700
+Wire Wire Line
+	5100 2150 4200 2150
+Wire Wire Line
+	5100 2250 4850 2250
+Wire Wire Line
+	4850 2250 4850 2150
+Connection ~ 4850 2150
+Text HLabel 4200 2150 0    60   Input ~ 0
+SDA
+Wire Wire Line
+	5100 2050 4200 2050
+Text HLabel 4200 2050 0    60   Input ~ 0
+SCL
+Wire Wire Line
+	5100 3300 4700 3300
+Text HLabel 4700 3300 0    60   Input ~ 0
+RES
+Wire Wire Line
+	5100 3100 4100 3100
+Connection ~ 4100 3650
+Wire Wire Line
+	5100 3000 4100 3000
+Connection ~ 4100 3100
+Wire Wire Line
+	5100 3200 4100 3200
+Connection ~ 4100 3200
+Text Notes 3700 2950 0    60   ~ 0
+I2C Address: 0x78
+Wire Wire Line
+	5100 3400 4100 3400
+Connection ~ 4100 3400
+$EndSCHEMATC
